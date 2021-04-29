@@ -1,3 +1,8 @@
+# 자습서: React 시작하기 
+
+ https://ko.reactjs.org/tutorial/tutorial.html 를 따라서 리액트 튜토리얼을 진행해보았습니다.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
