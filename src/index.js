@@ -3,6 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 class Square extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    };
+  }
+
   render() {
     // const value = this.props.value;
     return (
@@ -10,7 +17,7 @@ class Square extends React.Component {
         className="square"
         // prop으로 함수를 전달해 클릭하는 시점에만 함수를 호출!
         onClick={() => {
-          alert(`click!: ${this.props.value}`);
+          this.setState({ value: "X" });
         }}
         // [주의 1]
         // 위와 같이 함수(화살표 함수)를 전달하지 않고
@@ -27,7 +34,7 @@ class Square extends React.Component {
         //   alert(`click!: ${this.props.value}`);
         // }}
       >
-        {this.props.value}
+        {this.state.value}
       </button>
     );
   }
